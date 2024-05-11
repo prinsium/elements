@@ -16,6 +16,12 @@
   }
 }
 
+h1{
+  color: black;
+  font-size: 4vw;
+  font-weight: 600;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -24,6 +30,10 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+body::-webkit-scrollbar {
+  width: 0px; /* Set the width of the scrollbar */
 }
 
 @layer utilities {

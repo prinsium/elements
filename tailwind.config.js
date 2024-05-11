@@ -12,6 +12,20 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      animation: {
+        marquee: "marquee 35s linear infinite",
+        marqueeTwo: "marquee 15s linear infinite",
+      },
+      keyframes: {
+        marquee: {
+          from: {
+            transform: 'translateX(0)',
+          },
+          to: {
+            transform: 'translateX(calc(-100% - 4rem))',
+          },
+        },
+      },
     },
   },
   plugins: [],
